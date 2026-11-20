@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 18</title>
+    <style>
+    header, footer { background: #1a237e; color: white; text-align: center; padding: 15px; }
+    main { max-width: 600px; margin: auto; }
+    table { border-collapse: collapse; width: 100%; }
+    th, td { border: 1px solid #aaa; padding: 5px; }
+    th { background: #eee; }
+</style>
+</head>
+<body>
+    <header><h1>ABC College Admission 2026</h1></header>
+<main>
+    <h2>Courses and Fees</h2>
+    <table>
+        <caption>Available Courses</caption>
+        <thead><tr><th>Course</th><th>Seats</th><th>Fees</th></tr></thead>
+        <tbody>
+            <tr><td>B.Tech CSE</td><td>120</td><td>&#8377;90,000</td></tr>
+            <tr><td>BCA</td><td>60</td><td>&#8377;45,000</td></tr>
+        </tbody>
+    </table>
+    <form method="post" action="submit.php">
+        <fieldset>
+            <legend>Application Form</legend>
+            <p><label for="n">Name:</label><br><input type="text" id="n" required></p>
+            <p><label for="e">Email:</label><br><input type="email" id="e" required></p>
+            <p><label for="c">Course:</label><br>
+                <select id="c"><option>B.Tech CSE</option><option>BCA</option></select>
+            </p>
+            <p><label for="s">Statement:</label><br>
+                <textarea id="s" rows="3" cols="40"></textarea>
+            </p>
+            <button type="submit">Apply</button>
+        </fieldset>
+    </form>
+</main>
+<footer>&copy; 2026 ABC College</footer>
+</body>
+</html>
